@@ -1,24 +1,19 @@
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class CountWords {
-    static void countWordsInString(String input){
-        HashMap<String, Integer> countStringMap = new HashMap<>();
-        for(String s : input.split(" ")){
-            if(countStringMap.containsKey(s)){
-                countStringMap.put(s, countStringMap.get(s)+1);
-            }
-            else{
-                countStringMap.put(s, 1);
+    static int count(String s){
+        int count = 1;
+        for(int i =0; i< s.length()-1; i++){
+            if(s.charAt(i) == ' ' && s.charAt(i+1) != ' '){
+               count++;
             }
         }
-
-        System.out.println(countStringMap);
+        return count;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter A String: ");
         String input = sc.nextLine();
-        countWordsInString(input);
+        System.out.println("No of words is : "+count(input));
     }
 }
