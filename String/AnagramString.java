@@ -1,6 +1,7 @@
 /*
  * An anagram is a word or phrase formed by rearranging the letters of another word or phrase, using all the original letters exactly once. For example, the word "listen" can be rearranged to form the word "silent." Both words use the same letters but in a different order.
  * This approach compares the two strings by counting how many times each letter appears and checking if the counts match. If they do, the strings are anagrams!
+ * A = 65 and a = 97
  */
 
 public class AnagramString {
