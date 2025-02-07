@@ -2,6 +2,8 @@
 import java.util.Scanner;
 
 
+
+
 public class SwapStrings {
     static void swapping(String str1, String str2){
         str1 = str1+str2;
