@@ -46,7 +46,7 @@ public class InheritanceExample {
         Student newStudent = new Student("MCA", 101, "Dhami", 25, "Delhi");
 
         newStudent.getDetails();
-        Teacher newTeacher = new Teacher(111, "Math", "Ritik", 36, "Bihar");
+        Teacher newTeacher = new Teacher(111, "History", "Ritik", 36, "Bihar");
          newTeacher.getDetails();
         
     }
