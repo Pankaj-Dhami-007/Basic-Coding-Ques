@@ -1,27 +1,26 @@
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class Xyz {
-    static Set<Integer> findCommonElement(int arr1[], int arr2[]){
-        Set<Integer> set = new HashSet<>();
-        Set<Integer> commonSet = new HashSet<>();
-        for(int num : arr1){
-            set.add(num);
+    static void reverseEachWordOfString(String input){
+
+        String[] words = input.split(" ");
+        System.out.println(input);
+      
+        String reverseString = "";
+        for(int i =0; i< words.length; i++){
+            String word = words[i];
+            String newString ="";
+            char ch;
+            for(int j =0; j< word.length(); j++){
+                ch = word.charAt(j);
+                newString = ch+ newString;
+            }
+            reverseString = reverseString + newString + " ";
         }
 
-        for(int num : arr2){
-            if(set.contains(num)){
-                commonSet.add(num);
-            }
-        }
-        return commonSet;
+        System.out.println(reverseString);
     }
     public static void main(String[] args) {
-        int arr1[] = {1, 2, 3, 4, 5, 6};
-        int arr2[] = {5, 6, 7, 8, 9};
-        Set<Integer> commonElement = findCommonElement(arr1, arr2);
-        System.out.println(commonElement);
-
+        String input = "Pankaj Singh Dhami";
+        reverseEachWordOfString(input);
     }
 }
