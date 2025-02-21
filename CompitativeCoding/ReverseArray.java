@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class RotateArray {
+public class ReverseArray {
 
     static void reverseArray(int[] arr){
         int i =0;
