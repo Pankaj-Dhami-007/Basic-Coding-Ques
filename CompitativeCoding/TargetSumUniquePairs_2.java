@@ -3,6 +3,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/*
+ * Question: Given an array of integers, find all unique pairs of elements that sum up to a target value. Ensure that each pair appears only once, and the order of elements in the pair doesn't matter.
+ * Array: [1, 2, 3, 4, 3, 2, 4]
+    Target Sum: 6
+
+    Unique pairs that sum to the target are:
+[2, 4]
+[3, 3]
+
+
+ */
 public class TargetSumUniquePairs_2 {
 
     static List<List<Integer>> twoSum(int[] arr, int target) {
