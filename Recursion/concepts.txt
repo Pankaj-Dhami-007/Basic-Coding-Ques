@@ -1,0 +1,6 @@
+flow of recursion
+.......1-> make input Smaller but why
+ ......2-> recursion ->decision space  , for identification->
+.......................................................1.choices+decision
+ ......3-> recursion tree - soul of the recursion
+ ......4-> 2 step solve any recursion problem 

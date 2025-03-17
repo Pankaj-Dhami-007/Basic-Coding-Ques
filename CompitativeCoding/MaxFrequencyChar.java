@@ -5,6 +5,12 @@ import java.util.Map;
 public class MaxFrequencyChar {
     static char mostFreqChar(String s){
         Map<Character, Integer> charCountMap = new HashMap<>();
+
+          // Count occurrences of each character
+         // for (char c : s.toCharArray()) {
+           // charCountMap.put(c, charCountMap.getOrDefault(c, 0) + 1);
+        //}
+        
         for(Character ch : s.toCharArray()){
             if(charCountMap.containsKey(ch)){
                 charCountMap.put(ch, charCountMap.get(ch)+1);
@@ -49,3 +55,9 @@ public class MaxFrequencyChar {
         System.out.println(mostFreqChar(s));
     }
 }
+
+
+/*
+ * char mostFrequentChar = '\0'; // Initialize with null character
+ * mostFrequentChar is initialized with '\0' (null character), which is smaller than any valid lowercase alphabet.
+ */
