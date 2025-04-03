@@ -21,4 +21,6 @@ public class CountRepeatWords {
         String input = sc.nextLine();
         countWordsInString(input);
     }
+    // split()-->
+          //   breaking a string into an arr of substrings based on a specified delimeteror regular expression
 }

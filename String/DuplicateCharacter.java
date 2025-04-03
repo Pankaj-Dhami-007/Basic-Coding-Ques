@@ -27,4 +27,5 @@ class DuplicateCharacter {
         String input = sc.nextLine();
         findDuplicate(input);
     }
+    //toCharArray()--> method of styring class
 }
