@@ -1,0 +1,26 @@
+**************************Linear Search Explained Simply********
+
+Linear search is the most basic way to find an item in a list. It works by checking each element one by one from the start until it finds the target. Unlike binary search, it does not require the list to be sorted, but it is slower for large datasets.
+
+****************************How Linear Search Works (Step-by-Step)*************
+
+Start from the first element of the list.
+
+Compare it with the target:
+
+If it matches, return the position.
+
+If not, move to the next element.
+
+Repeat until the end of the list.
+
+If the item is not found, return "Not Found."
+
+Example: Looking for a Friend in a Line
+Suppose your friend is standing in a queue, and you don’t know their position:
+
+You start asking one person at a time, "Are you Alex?"
+
+If yes, you found them!
+
+If no, you move to the next person until you find them (or reach the end).
