@@ -2,6 +2,17 @@
 import java.util.Scanner;
 
 public class ArmStrongNo {
+   static boolean hasArmStrong(int n){
+      int temp = n;
+      int sum =0;
+
+      while (temp!=0) {
+         int lastDigit = temp % 10;
+         sum +=Math.pow(lastDigit, 3);
+         temp /= 10;
+      }
+      return sum == n;
+   }
     static void isArmStrong(int n){
       int temp1 = n;
       // cal no of digits
@@ -35,5 +46,7 @@ public class ArmStrongNo {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
        isArmStrong(n);// 9474
+       System.out.println();
+       System.out.println(hasArmStrong(n));
     }
 }
