@@ -1,3 +1,14 @@
+/*
+ 
+*****
+ ****
+  ***
+   **
+    *
+    
+ */
+
+
 public class Pattern_4 {
     static void print(int n){
         for(int i =1; i<= n; i++){

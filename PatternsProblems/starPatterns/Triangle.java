@@ -1,6 +1,59 @@
+/*
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+
+* * * * *       
+ * * * *
+  * * *
+   * *
+    *
+
+   *
+  * *
+ *   *
+*******
+
+
+    *
+   ***
+  *****
+ *******
+*********
+
+
+
+ */
+
 public class Triangle {
 
-    static void printHollowTriangle(int n){
+    static void printOddStarTriangle(int n){
+
+        for(int i =1; i<=n; i++){
+            for(int j =1; j<=n-i; j++){
+                System.out.print(" ");
+            }
+            for(int j =1; j<= 2*i-1; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    static void printHollowTriangle(int n, int m){
+
+        for(int i =0; i<n; i++){
+            for(int j=0; j< m; j++){
+                if(i+j == 3 || j -i == 3 || i == 3){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
 
     }
 
@@ -46,5 +99,7 @@ public class Triangle {
         printTriangle(n);
         printReverseTriangle(n);
         printInAnotherWay(n);
+        printHollowTriangle(4, 7);
+        printOddStarTriangle(n);
     }
 }
